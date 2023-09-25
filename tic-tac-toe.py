@@ -20,19 +20,19 @@ while True:
             l[x]='O'
             turn=1
     for i in range(3):
-        if l[i*3+1]==l[i*3+2]==l[i*3+3]=='X':
+        if l[i*3]==l[i*3+1]==l[i*3+2]=='X':
             board()
             print("X's won the Game !...")
             over=1
-        elif l[i*3+1]==l[i*3+2]==l[i*3+3]=='O':
+        elif l[i*3]==l[i*3+1]==l[i*3+2]=='O':
             board()
             print("O's won the Game !...")
             over=1
-        elif l[i+1]==l[i+4]==l[i+7]=='X':
+        elif l[i]==l[i+3]==l[i+6]=='X':
             board()
             print("X's won the Game !...")
             over=1
-        elif l[i+1]==l[i+4]==l[i+7]=='O':
+        elif l[i]==l[i+3]==l[i+6]=='O':
             board()
             print("O's won the Game !...")
             over=1
